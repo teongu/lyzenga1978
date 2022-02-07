@@ -2,7 +2,7 @@
 
 Water column correction from Lyzenga 1978.
 
-This repository implements the water column correction described in Lyzenga 1978, "Passive remote sensing techniques for mapping water depth and bottom features" (doi:10.1364/AO.17.000379)
+This repository implements the water column correction described in Lyzenga 1978, "Passive remote sensing techniques for mapping water depth and bottom features" (https://doi.org/10.1364/AO.17.000379)
 
 That has been strongly inspired by the work of @jkibele, but some modifications have been performed. 
 
