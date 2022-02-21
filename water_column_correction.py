@@ -60,17 +60,23 @@ def linear_regression(list_X,Z):
     return(np.array(list_slope),np.array(list_intercept))
 
 
-def Aij(b):
+def Aij(b_input):
     """
     Return the coordinate system rotation parameters described in Equations B5, B6 and B7, 
     that are needed to compute the depth invariant index of Equation 8.
     ----------
     Input:
-        - b : 1D array (or list). Slopes from regressing depths against logged radiance values.
+        - b_input : 1D array (or list). Slopes from regressing depths against logged radiance values.
     -------
     Output:
         - 2D array. Matrix Aij as defined in Equations B5, B6 and B7 of Lyzenga 1978. 
     """
+    if type(b_input)==list:
+        b=np.array(b_input)
+    elif type(b_input)==np.ndarray:
+        b=b_input
+    else:
+        raise Exception("b_input must be a list or a 1D array.")
     N = len(b)
     A = np.empty((N,N), dtype='float')
     for i in range(N):
