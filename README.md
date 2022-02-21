@@ -10,7 +10,7 @@ That has been strongly inspired by the work of @jkibele, but some modifications 
 
 The main idea of Lyzenga's paper is to be able to perform a water column correction of a multibands image, i.e. to remove the effects due to the water column on the reflectance perceived by the sensor. 
 
-To be able to do so, we must have a multibands image at a disposal, and a few bathymetry points to be able to estimate a linear relation between depth and the logarithm of reflectance. The strength of the algorithm is that it is not required to know the bathymetry in each point of the image.
+To be able to do so, we must have a multibands image at our disposal, and a few bathymetry points to be able to estimate a linear relationship between depth and the logarithm of reflectance. The strength of the algorithm is that it is not required to know the bathymetry in each point of the image.
 
 A corrected image is called a depth invariant image, because it does not depend on the depth anymore. Such an image usually increases the accuracy of any classification performed on it (see Nguyen et al. 2021, "Mapping of Coral Reefs with Multispectral Satellites: A Review of Recent Papers", https://doi.org/10.3390/rs13214470), even though it can have some other advantages depending on the work you want to achieve.
 
