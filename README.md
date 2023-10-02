@@ -32,6 +32,11 @@ di_image = reshape_di(depth_invariant(Aij(slopes),compute_Xi(image,dw)),image)
 
 But, to see more details, I strongly recommend you to have a look at the notebook `Lyzenga 1978 demo.ipynb`.
 
+## Data
+
+Imagery and bathymetry data comes from the GLADYS research team (https://www.gladys-littoral.org/). 
+
+Satellite image comes from Pléiades satellite. Pléiades © CNES _ 2021, Distribution AIRBUS DS
 
 ## Contact
 
